@@ -50,7 +50,7 @@ public class BaseTest {
 			WebDriverManager.chromedriver().setup();
 
 			if(browserName.contains("headless")){
-			options.addArguments("headless");
+			options.addArguments("--headless");
 			}
 			driver = new ChromeDriver(options);
 			driver.manage().window().setSize(new Dimension(1440,900));//full screen
